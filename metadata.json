@@ -1,0 +1,8 @@
+{
+  "uuid": "quick-command@xinming.local",
+  "name": "Quick Command",
+  "description": "A focused GNOME command palette for launching applications and recalling clipboard text.",
+  "version": 1,
+  "shell-version": ["45", "46", "47", "48"],
+  "settings-schema": "org.gnome.shell.extensions.quick-command"
+}

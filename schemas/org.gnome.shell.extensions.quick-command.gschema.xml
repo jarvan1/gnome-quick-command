@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.quick-command" path="/org/gnome/shell/extensions/quick-command/">
+    <key name="open-launcher" type="as">
+      <default>['&lt;Ctrl&gt;&lt;Alt&gt;space']</default>
+      <summary>Open launcher shortcut</summary>
+      <description>Keyboard shortcut used to open or close Quick Command.</description>
+    </key>
+    <key name="clipboard-enabled" type="b">
+      <default>true</default>
+      <summary>Enable clipboard history</summary>
+      <description>Capture text copied to the regular clipboard.</description>
+    </key>
+    <key name="clipboard-history-size" type="i">
+      <range min="10" max="500"/>
+      <default>100</default>
+      <summary>Clipboard history size</summary>
+      <description>Maximum number of text entries retained in clipboard history.</description>
+    </key>
+  </schema>
+</schemalist>
