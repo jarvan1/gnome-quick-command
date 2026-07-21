@@ -1,5 +1,19 @@
+/* Neutralize every visual the shell theme puts on the outer modal-dialog
+   frame (background, padding, shadow…) so only our panel is visible. */
 .quick-command-modal {
+    padding: 0;
+    spacing: 0;
     background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.quick-command-modal .modal-dialog-content-box {
+    padding: 0;
+    spacing: 0;
+    /* St CSS has no `none`; out-range value to lift the theme's 28em cap. */
+    max-width: 4096px;
 }
 
 .quick-command-panel {
@@ -19,6 +33,7 @@
 
 .quick-command-search-entry {
     height: 52px;
+    min-height: 52px;
     padding: 0 10px;
     color: #ffffff;
     font-size: 1.3em;
@@ -76,6 +91,9 @@
 
 .quick-command-results {
     spacing: 2px;
+    /* Overlay scrollbar floats over the list's right edge; keep the
+       rows' trailing meta label clear of it. */
+    padding-right: 14px;
 }
 
 .quick-command-result {
@@ -106,20 +124,18 @@
     font-size: 0.8em;
 }
 
+/* Kept flat (no background/border) so the clipboard mode matches the
+   frameless look of the application results list. */
 .quick-command-clipboard-workspace {
     color: #f2f2f3;
-    background-color: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 10px;
 }
 
 .quick-command-clipboard-list-scroll {
-    background-color: rgba(0, 0, 0, 0.12);
-    border-radius: 9px 0 0 9px;
+    background-color: transparent;
 }
 
 .quick-command-clipboard-list {
-    padding: 6px;
+    padding: 0 14px 0 0;
     spacing: 2px;
 }
 
@@ -162,14 +178,12 @@
 }
 
 .quick-command-clipboard-details {
-    background-color: rgba(255, 255, 255, 0.02);
+    background-color: transparent;
     border-left: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 0 9px 9px 0;
 }
 
 .quick-command-clipboard-preview-scroll {
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 0 9px 0 0;
+    background-color: transparent;
 }
 
 .quick-command-clipboard-preview {
@@ -195,9 +209,8 @@
 .quick-command-clipboard-info {
     padding: 13px 22px;
     spacing: 9px;
-    background-color: rgba(255, 255, 255, 0.02);
+    background-color: transparent;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 0 0 9px 0;
 }
 
 .quick-command-clipboard-info-title {
@@ -237,10 +250,17 @@
     text-align: center;
 }
 
+/* Fixed height: hint heights follow their text (arrow glyphs and the
+   mode-dependent Ctrl+Del hint differ), so without it the footer grows
+   or shrinks when switching between the two modes. */
 .quick-command-footer {
-    padding: 2px 4px;
-    spacing: 16px;
+    height: 30px;
+    padding: 0 4px;
     color: rgba(242, 242, 243, 0.55);
+}
+
+.quick-command-footer-group {
+    spacing: 16px;
 }
 
 .quick-command-footer-hint {
@@ -248,12 +268,14 @@
 }
 
 .quick-command-kbd {
-    padding: 1px 6px;
+    height: 20px;
+    padding: 0 6px;
     color: rgba(242, 242, 243, 0.75);
     font-size: 0.78em;
     font-weight: 600;
     background-color: rgba(255, 255, 255, 0.12);
     border-radius: 4px;
+    text-align: center;
 }
 
 .quick-command-footer-label {
