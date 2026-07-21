@@ -17,7 +17,8 @@ export default class QuickCommandExtension extends Extension {
         this._clipboardHistory = new ClipboardHistory(this._settings);
         this._dialog = new QuickCommandDialog(
             this._appIndex,
-            this._clipboardHistory
+            this._clipboardHistory,
+            this.gettext.bind(this)
         );
 
         this._clipboardHistory.setChangedCallback(() => {

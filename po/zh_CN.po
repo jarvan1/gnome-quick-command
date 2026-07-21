@@ -1,0 +1,129 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Quick Command 2\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-07-21 15:20+0800\n"
+"Last-Translator: Quick Command contributors\n"
+"Language-Team: Simplified Chinese\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "A focused GNOME command palette for launching applications and previewing text and image clipboard history."
+msgstr "一款专注的 GNOME 命令面板，用于启动应用以及预览文字和图片剪贴板历史。"
+
+msgid "Image"
+msgstr "图片"
+
+msgid "Earlier"
+msgstr "更早"
+
+msgid "Today"
+msgstr "今天"
+
+msgid "Yesterday"
+msgstr "昨天"
+
+msgid "This Week"
+msgstr "这个星期"
+
+msgid "This Month"
+msgstr "这个月"
+
+msgid "Tab Switch"
+msgstr "Tab 切换"
+
+msgid "Search applications…"
+msgstr "搜索应用…"
+
+msgid "Applications"
+msgstr "应用"
+
+msgid "Clipboard"
+msgstr "剪贴板"
+
+msgid "Clear History"
+msgstr "清空历史"
+
+msgid "↑↓ Select"
+msgstr "↑↓ 选择"
+
+msgid "Enter Open"
+msgstr "Enter 打开"
+
+msgid "Esc Close"
+msgstr "Esc 关闭"
+
+msgid "Search clipboard history…"
+msgstr "搜索剪贴板历史…"
+
+msgid "Enter Paste"
+msgstr "Enter 粘贴"
+
+msgid "No applications found"
+msgstr "没有找到应用"
+
+msgid "Clipboard history is empty"
+msgstr "剪贴板历史为空"
+
+msgid "Select an item to view details"
+msgstr "选择一条记录查看详情"
+
+msgid "Details"
+msgstr "详细信息"
+
+msgid "Source"
+msgstr "来源"
+
+msgid "Unknown source"
+msgstr "未知来源"
+
+msgid "Type"
+msgstr "类型"
+
+msgid "Text"
+msgstr "文字"
+
+msgid "Size"
+msgstr "大小"
+
+msgid "Launcher"
+msgstr "启动器"
+
+msgid "Use GTK accelerator syntax, such as <Super>r or <Ctrl>space."
+msgstr "使用 GTK accelerator 格式，例如 <Super>r 或 <Ctrl>space。"
+
+msgid "Open shortcut"
+msgstr "呼出快捷键"
+
+msgid "Text and images are stored in the current user data directory for 7 days."
+msgstr "文本与图片保存在当前用户的数据目录中，并保留 7 天。"
+
+msgid "Record clipboard history"
+msgstr "记录剪贴板历史"
+
+msgid "Turning this off stops capturing new content but keeps existing history."
+msgstr "关闭后停止捕获新内容，已有记录会保留。"
+
+msgid "Record images"
+msgstr "记录图片"
+
+msgid "Supports PNG, JPEG, WebP, and BMP up to 20 MB per image."
+msgstr "支持 PNG、JPEG、WebP 和 BMP，单张最大 20 MB。"
+
+msgid "History size"
+msgstr "历史记录数量"
+
+msgid "Items older than 7 days or beyond this limit are deleted automatically."
+msgstr "超过 7 天或超出数量限制的旧记录会自动删除。"
+
+msgid "Privacy"
+msgstr "隐私说明"
+
+msgid "This version records text and images"
+msgstr "当前版本记录文本与图片"
+
+msgid "Image storage is limited to 200 MB. Do not copy passwords, tokens, or sensitive images."
+msgstr "图片总存储上限为 200 MB；请勿复制密码、令牌或敏感图片。"

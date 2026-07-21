@@ -23,7 +23,7 @@ jobs:
       - name: Install build dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install --yes libglib2.0-bin
+          sudo apt-get install --yes gettext libglib2.0-bin
 
       - name: Determine package version
         id: version

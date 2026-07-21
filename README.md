@@ -14,7 +14,7 @@ Shell 46 on Ubuntu 24.04.
 
 ```bash
 make install
-gnome-extensions enable quick-command@xinming.local
+gnome-extensions enable quick-command@xinming.dev
 ```
 
 On a Wayland session, log out and back in if GNOME Shell does not discover a
@@ -31,10 +31,20 @@ between applications and clipboard history. Activating a clipboard result pastes
 it into the previously focused application; common terminals use
 `Ctrl+Shift+V` automatically.
 
+The clipboard page uses a 40/60 split view. History is grouped into today,
+yesterday, this week, and this month on the left. The selected text or image is
+previewed on the upper-right, while its source application, MIME type, and size
+appear below it. Entries captured before source tracking was added show an
+unknown source.
+
+The interface follows the GNOME session language. Simplified Chinese is
+included, while English is used as the source language and fallback for all
+other locales.
+
 Open Extension Manager or run the following command to change settings:
 
 ```bash
-gnome-extensions prefs quick-command@xinming.local
+gnome-extensions prefs quick-command@xinming.dev
 ```
 
 The shortcut field uses GTK accelerator syntax, such as `<Super>r` or
@@ -46,7 +56,7 @@ Build an architecture-independent package for both AMD64 and ARM64:
 
 ```bash
 make deb
-sudo apt install ./dist/gnome-shell-extension-quick-command_1_all.deb
+sudo apt install ./dist/gnome-shell-extension-quick-command_2_all.deb
 ```
 
 The GitHub Actions workflow can be started manually from the Actions page. A
@@ -75,6 +85,7 @@ enabled.
 ## Development checks
 
 ```bash
+sudo apt install gettext libglib2.0-bin
 glib-compile-schemas --strict --dry-run schemas
 make build
 ```

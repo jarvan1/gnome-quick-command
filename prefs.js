@@ -7,6 +7,7 @@ import {ExtensionPreferences} from 'resource:///org/gnome/Shell/Extensions/js/ex
 export default class QuickCommandPreferences extends ExtensionPreferences {
     fillPreferencesWindow(window) {
         const settings = this.getSettings();
+        const _ = this.gettext.bind(this);
         window.set_default_size(560, 520);
 
         const page = new Adw.PreferencesPage({
@@ -16,13 +17,13 @@ export default class QuickCommandPreferences extends ExtensionPreferences {
         window.add(page);
 
         const launcherGroup = new Adw.PreferencesGroup({
-            title: '启动器',
-            description: '使用 GTK accelerator 格式，例如 <Super>r 或 <Ctrl>space。',
+            title: _('Launcher'),
+            description: _('Use GTK accelerator syntax, such as <Super>r or <Ctrl>space.'),
         });
         page.add(launcherGroup);
 
         const shortcutRow = new Adw.EntryRow({
-            title: '呼出快捷键',
+            title: _('Open shortcut'),
             text: settings.get_strv('open-launcher')[0] ?? '<Ctrl><Alt>space',
         });
         shortcutRow.connect('changed', () => {
@@ -40,14 +41,14 @@ export default class QuickCommandPreferences extends ExtensionPreferences {
         launcherGroup.add(shortcutRow);
 
         const clipboardGroup = new Adw.PreferencesGroup({
-            title: '剪贴板',
-            description: '文本与图片保存在当前用户的数据目录中，并保留 7 天。',
+            title: _('Clipboard'),
+            description: _('Text and images are stored in the current user data directory for 7 days.'),
         });
         page.add(clipboardGroup);
 
         const clipboardSwitch = new Adw.SwitchRow({
-            title: '记录剪贴板历史',
-            subtitle: '关闭后停止捕获新内容，已有记录会保留',
+            title: _('Record clipboard history'),
+            subtitle: _('Turning this off stops capturing new content but keeps existing history.'),
         });
         settings.bind(
             'clipboard-enabled',
@@ -58,8 +59,8 @@ export default class QuickCommandPreferences extends ExtensionPreferences {
         clipboardGroup.add(clipboardSwitch);
 
         const clipboardImagesSwitch = new Adw.SwitchRow({
-            title: '记录图片',
-            subtitle: '支持 PNG、JPEG、WebP 和 BMP，单张最大 20 MB',
+            title: _('Record images'),
+            subtitle: _('Supports PNG, JPEG, WebP, and BMP up to 20 MB per image.'),
         });
         settings.bind(
             'clipboard-images-enabled',
@@ -76,8 +77,8 @@ export default class QuickCommandPreferences extends ExtensionPreferences {
         clipboardGroup.add(clipboardImagesSwitch);
 
         const historySize = new Adw.SpinRow({
-            title: '历史记录数量',
-            subtitle: '超过 7 天或超出数量限制的旧记录会自动删除',
+            title: _('History size'),
+            subtitle: _('Items older than 7 days or beyond this limit are deleted automatically.'),
             adjustment: new Gtk.Adjustment({
                 lower: 10,
                 upper: 500,
@@ -91,11 +92,13 @@ export default class QuickCommandPreferences extends ExtensionPreferences {
         });
         clipboardGroup.add(historySize);
 
-        const privacyGroup = new Adw.PreferencesGroup({title: '隐私说明'});
+        const privacyGroup = new Adw.PreferencesGroup({
+            title: _('Privacy'),
+        });
         page.add(privacyGroup);
         privacyGroup.add(new Adw.ActionRow({
-            title: '当前版本记录文本与图片',
-            subtitle: '图片总存储上限为 200 MB；请勿复制密码、令牌或敏感图片。',
+            title: _('This version records text and images'),
+            subtitle: _('Image storage is limited to 200 MB. Do not copy passwords, tokens, or sensitive images.'),
             icon_name: 'channel-secure-symbolic',
         }));
     }

@@ -5,7 +5,7 @@ set -euo pipefail
 readonly SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 readonly PROJECT_DIR="$(cd -- "${SCRIPT_DIR}/.." && pwd)"
 readonly PACKAGE_NAME="gnome-shell-extension-quick-command"
-readonly UUID="quick-command@xinming.local"
+readonly UUID="quick-command@xinming.dev"
 
 version="${1:-}"
 if [[ -z "${version}" ]]; then
