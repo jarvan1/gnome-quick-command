@@ -7,8 +7,8 @@ focuses on three jobs:
 - discover, search, and launch installed desktop applications;
 - capture, search, preview, and directly paste text and image clipboard history.
 
-The extension targets GNOME Shell 45 and newer. It is developed against GNOME
-Shell 46 on Ubuntu 24.04.
+The extension targets GNOME Shell 45 through 50. It is developed against
+GNOME Shell 50 on Ubuntu 26.04.
 
 ## Install from source
 
@@ -56,7 +56,7 @@ Build an architecture-independent package for both AMD64 and ARM64:
 
 ```bash
 make deb
-sudo apt install ./dist/gnome-shell-extension-quick-command_2_all.deb
+sudo apt install ./dist/gnome-shell-extension-quick-command_4.0.0_all.deb
 ```
 
 The GitHub Actions workflow can be started manually from the Actions page. A
