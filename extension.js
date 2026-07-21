@@ -18,6 +18,7 @@ export default class QuickCommandExtension extends Extension {
         this._dialog = new QuickCommandDialog(
             this._appIndex,
             this._clipboardHistory,
+            this._settings,
             this.gettext.bind(this)
         );
 

@@ -3,74 +3,59 @@
 }
 
 .quick-command-panel {
-    padding: 20px 22px;
-    spacing: 12px;
-    color: #f7f3f5;
-    background-color: rgba(38, 31, 35, 0.98);
-    border: 1px solid rgba(233, 84, 32, 0.42);
-    border-radius: 20px;
-    box-shadow: 0 18px 60px 12px rgba(0, 0, 0, 0.48);
+    padding: 10px 12px;
+    spacing: 10px;
+    color: #f2f2f3;
+    background-color: rgba(32, 33, 36, 0.72);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 12px;
+    box-shadow: 0 16px 48px 8px rgba(0, 0, 0, 0.45);
 }
 
-.quick-command-title-row {
-    padding: 0 4px;
-}
-
-.quick-command-title {
-    color: #ff8a5b;
-    font-size: 0.8em;
-    font-weight: 800;
-    letter-spacing: 2px;
-}
-
-.quick-command-shortcut-hint,
-.quick-command-footer {
-    color: rgba(247, 239, 243, 0.56);
-    font-size: 0.8em;
+.quick-command-separator {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .quick-command-search-entry {
-    height: 48px;
-    padding: 0 16px;
+    height: 52px;
+    padding: 0 10px;
     color: #ffffff;
-    font-size: 1.25em;
-    background-color: rgba(255, 255, 255, 0.075);
-    border: 1px solid rgba(255, 255, 255, 0.13);
-    border-radius: 13px;
-    selection-background-color: #e95420;
+    font-size: 1.3em;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    selection-background-color: rgba(255, 99, 99, 0.35);
     selected-color: #ffffff;
 }
 
+.quick-command-search-entry:focus {
+    border: 0;
+    box-shadow: none;
+}
+
 .quick-command-search-entry StLabel.hint-text {
-    color: rgba(247, 239, 243, 0.58);
+    color: rgba(242, 242, 243, 0.4);
 }
 
 .quick-command-search-entry StIcon,
 .quick-command-search-icon {
     icon-size: 20px;
-    color: #f47c50;
+    color: rgba(242, 242, 243, 0.5);
     margin-right: 10px;
 }
 
-.quick-command-search-entry:focus {
-    border-color: #f47c50;
-}
-
-.quick-command-search-entry:focus StIcon,
-.quick-command-search-entry:focus .quick-command-search-icon {
-    color: #ff8a5b;
-}
-
 .quick-command-tabs {
-    spacing: 8px;
+    spacing: 6px;
 }
 
 .quick-command-tab,
 .quick-command-clear-button {
-    padding: 7px 12px;
-    color: rgba(247, 239, 243, 0.68);
+    padding: 5px 12px;
+    color: rgba(242, 242, 243, 0.65);
+    font-size: 0.9em;
     background-color: transparent;
-    border-radius: 9px;
+    border-radius: 7px;
 }
 
 .quick-command-tab:hover,
@@ -81,58 +66,81 @@
 
 .quick-command-tab:checked {
     color: #ffffff;
-    font-weight: 700;
-    background-color: #e95420;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.14);
 }
 
 .quick-command-clear-button {
-    color: #f3ad91;
+    color: rgba(255, 128, 128, 0.85);
 }
 
 .quick-command-results {
-    spacing: 5px;
+    spacing: 2px;
+}
+
+.quick-command-result {
+    height: 42px;
+    padding: 0 10px;
+    color: #f2f2f3;
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+.quick-command-result:hover,
+.quick-command-result:selected {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.quick-command-result-content {
+    spacing: 12px;
+}
+
+.quick-command-result-title {
+    color: #ffffff;
+    font-size: 0.95em;
+    font-weight: 500;
+}
+
+.quick-command-result-meta {
+    color: rgba(242, 242, 243, 0.4);
+    font-size: 0.8em;
 }
 
 .quick-command-clipboard-workspace {
-    color: #f7f3f5;
-    background-color: rgba(255, 255, 255, 0.035);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 14px;
+    color: #f2f2f3;
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
 }
 
 .quick-command-clipboard-list-scroll {
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 13px 0 0 13px;
+    background-color: rgba(0, 0, 0, 0.12);
+    border-radius: 9px 0 0 9px;
 }
 
 .quick-command-clipboard-list {
-    padding: 8px;
-    spacing: 5px;
+    padding: 6px;
+    spacing: 2px;
 }
 
 .quick-command-clipboard-group-title {
-    padding: 10px 10px 5px;
-    color: #ff9a72;
-    font-size: 0.78em;
-    font-weight: 800;
+    padding: 10px 10px 4px;
+    color: rgba(242, 242, 243, 0.45);
+    font-size: 0.75em;
+    font-weight: 700;
 }
 
 .quick-command-clipboard-item {
-    height: 46px;
+    height: 42px;
     padding: 0 8px;
-    color: #f7f3f5;
+    color: #f2f2f3;
     background-color: transparent;
-    border: 1px solid rgba(233, 84, 32, 0);
-    border-radius: 11px;
+    border-radius: 8px;
 }
 
 .quick-command-clipboard-item:hover,
 .quick-command-clipboard-item:selected {
-    background-color: rgba(233, 84, 32, 0.14);
-}
-
-.quick-command-clipboard-item:selected {
-    border-color: rgba(244, 124, 80, 0.78);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .quick-command-clipboard-item-content {
@@ -144,59 +152,59 @@
 }
 
 .quick-command-clipboard-item-title {
-    color: #fffafb;
-    font-size: 0.92em;
-    font-weight: 600;
+    color: #ffffff;
+    font-size: 0.9em;
+    font-weight: 500;
 }
 
 .quick-command-clipboard-text-icon {
-    color: #f47c50;
+    color: rgba(242, 242, 243, 0.55);
 }
 
 .quick-command-clipboard-details {
-    background-color: rgba(255, 255, 255, 0.018);
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 0 13px 13px 0;
+    background-color: rgba(255, 255, 255, 0.02);
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 0 9px 9px 0;
 }
 
 .quick-command-clipboard-preview-scroll {
-    background-color: rgba(0, 0, 0, 0.08);
-    border-radius: 0 13px 0 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0 9px 0 0;
 }
 
 .quick-command-clipboard-preview {
-    padding: 20px 24px;
+    padding: 18px 22px;
 }
 
 .quick-command-clipboard-text-preview {
-    color: #fffafb;
-    font-size: 1.05em;
+    color: #f7f7f8;
+    font-size: 1em;
 }
 
 .quick-command-clipboard-image-preview {
-    background-color: rgba(0, 0, 0, 0.14);
-    border: 1px solid rgba(255, 255, 255, 0.09);
-    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
 }
 
 .quick-command-clipboard-preview-empty,
 .quick-command-clipboard-preview-missing {
-    color: rgba(247, 239, 243, 0.45);
+    color: rgba(242, 242, 243, 0.4);
 }
 
 .quick-command-clipboard-info {
-    padding: 15px 24px;
-    spacing: 10px;
-    background-color: rgba(255, 255, 255, 0.025);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 0 0 13px 0;
+    padding: 13px 22px;
+    spacing: 9px;
+    background-color: rgba(255, 255, 255, 0.02);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 0 0 9px 0;
 }
 
 .quick-command-clipboard-info-title {
     padding-bottom: 2px;
-    color: #ff9a72;
-    font-size: 0.8em;
-    font-weight: 800;
+    color: rgba(242, 242, 243, 0.45);
+    font-size: 0.75em;
+    font-weight: 700;
 }
 
 .quick-command-clipboard-info-row {
@@ -205,35 +213,13 @@
 
 .quick-command-clipboard-info-label {
     width: 48px;
-    color: rgba(247, 239, 243, 0.52);
-    font-size: 0.86em;
+    color: rgba(242, 242, 243, 0.45);
+    font-size: 0.85em;
 }
 
 .quick-command-clipboard-info-value {
-    color: #f7f3f5;
-    font-size: 0.86em;
-}
-
-.quick-command-result {
-    height: 48px;
-    padding: 0 12px;
-    color: #f7f3f5;
-    background-color: transparent;
-    border: 1px solid rgba(233, 84, 32, 0);
-    border-radius: 12px;
-}
-
-.quick-command-result:hover,
-.quick-command-result:selected {
-    background-color: rgba(233, 84, 32, 0.14);
-}
-
-.quick-command-result:selected {
-    border-color: rgba(244, 124, 80, 0.78);
-}
-
-.quick-command-result-content {
-    spacing: 12px;
+    color: #f2f2f3;
+    font-size: 0.85em;
 }
 
 .quick-command-image-thumbnail {
@@ -241,28 +227,36 @@
     height: 36px;
     background-color: transparent;
     border: 0;
-    border-radius: 7px;
-}
-
-.quick-command-result-title {
-    color: #fffafb;
-    font-size: 1em;
-    font-weight: 600;
-}
-
-.quick-command-result-meta {
-    color: rgba(247, 239, 243, 0.56);
-    font-size: 0.8em;
+    border-radius: 6px;
 }
 
 .quick-command-empty {
     padding: 0 16px;
-    color: rgba(247, 239, 243, 0.48);
+    color: rgba(242, 242, 243, 0.4);
     font-size: 0.93em;
     text-align: center;
 }
 
 .quick-command-footer {
-    padding: 4px 4px 0;
-    spacing: 18px;
+    padding: 2px 4px;
+    spacing: 16px;
+    color: rgba(242, 242, 243, 0.55);
+}
+
+.quick-command-footer-hint {
+    spacing: 6px;
+}
+
+.quick-command-kbd {
+    padding: 1px 6px;
+    color: rgba(242, 242, 243, 0.75);
+    font-size: 0.78em;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+}
+
+.quick-command-footer-label {
+    color: rgba(242, 242, 243, 0.5);
+    font-size: 0.85em;
 }

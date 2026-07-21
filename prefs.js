@@ -40,6 +40,23 @@ export default class QuickCommandPreferences extends ExtensionPreferences {
         });
         launcherGroup.add(shortcutRow);
 
+        const appearanceGroup = new Adw.PreferencesGroup({
+            title: _('Appearance'),
+        });
+        page.add(appearanceGroup);
+
+        const blurSwitch = new Adw.SwitchRow({
+            title: _('Background blur'),
+            subtitle: _('Gaussian blur behind the panel. Turn off if opening feels slow.'),
+        });
+        settings.bind(
+            'blur-enabled',
+            blurSwitch,
+            'active',
+            Gio.SettingsBindFlags.DEFAULT
+        );
+        appearanceGroup.add(blurSwitch);
+
         const clipboardGroup = new Adw.PreferencesGroup({
             title: _('Clipboard'),
             description: _('Text and images are stored in the current user data directory for 7 days.'),

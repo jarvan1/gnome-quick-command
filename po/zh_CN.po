@@ -32,8 +32,11 @@ msgstr "这个星期"
 msgid "This Month"
 msgstr "这个月"
 
-msgid "Tab Switch"
-msgstr "Tab 切换"
+msgid "Switch"
+msgstr "切换"
+
+msgid "Application"
+msgstr "应用"
 
 msgid "Search applications…"
 msgstr "搜索应用…"
@@ -47,20 +50,20 @@ msgstr "剪贴板"
 msgid "Clear History"
 msgstr "清空历史"
 
-msgid "↑↓ Select"
-msgstr "↑↓ 选择"
+msgid "Select"
+msgstr "选择"
 
-msgid "Enter Open"
-msgstr "Enter 打开"
+msgid "Open"
+msgstr "打开"
 
-msgid "Esc Close"
-msgstr "Esc 关闭"
+msgid "Close"
+msgstr "关闭"
 
 msgid "Search clipboard history…"
 msgstr "搜索剪贴板历史…"
 
-msgid "Enter Paste"
-msgstr "Enter 粘贴"
+msgid "Paste"
+msgstr "粘贴"
 
 msgid "No applications found"
 msgstr "没有找到应用"
@@ -97,6 +100,15 @@ msgstr "使用 GTK accelerator 格式，例如 <Super>r 或 <Ctrl>space。"
 
 msgid "Open shortcut"
 msgstr "呼出快捷键"
+
+msgid "Appearance"
+msgstr "外观"
+
+msgid "Background blur"
+msgstr "背景模糊"
+
+msgid "Gaussian blur behind the panel. Turn off if opening feels slow."
+msgstr "面板背后的高斯模糊。若打开时感觉卡顿可关闭。"
 
 msgid "Text and images are stored in the current user data directory for 7 days."
 msgstr "文本与图片保存在当前用户的数据目录中，并保留 7 天。"

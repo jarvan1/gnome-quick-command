@@ -16,6 +16,11 @@
       <summary>Enable image clipboard history</summary>
       <description>Capture supported image formats in clipboard history.</description>
     </key>
+    <key name="blur-enabled" type="b">
+      <default>true</default>
+      <summary>Blur behind the panel</summary>
+      <description>Apply a gaussian blur to the content behind the launcher panel.</description>
+    </key>
     <key name="clipboard-history-size" type="i">
       <range min="10" max="500"/>
       <default>100</default>

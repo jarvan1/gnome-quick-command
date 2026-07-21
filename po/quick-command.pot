@@ -1,125 +1,190 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Quick Command package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Quick Command 2\n"
+"Project-Id-Version: Quick Command\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-21 15:20+0800\n"
+"POT-Creation-Date: 2026-07-21 17:53+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "A focused GNOME command palette for launching applications and previewing text and image clipboard history."
-msgstr ""
-
-msgid "Image"
-msgstr ""
-
-msgid "Earlier"
-msgstr ""
-
-msgid "Today"
-msgstr ""
-
-msgid "Yesterday"
-msgstr ""
-
-msgid "This Week"
-msgstr ""
-
-msgid "This Month"
-msgstr ""
-
-msgid "Tab Switch"
-msgstr ""
-
-msgid "Search applications…"
-msgstr ""
-
-msgid "Applications"
-msgstr ""
-
-msgid "Clipboard"
-msgstr ""
-
-msgid "Clear History"
-msgstr ""
-
-msgid "↑↓ Select"
-msgstr ""
-
-msgid "Enter Open"
-msgstr ""
-
-msgid "Esc Close"
-msgstr ""
-
-msgid "Search clipboard history…"
-msgstr ""
-
-msgid "Enter Paste"
-msgstr ""
-
-msgid "No applications found"
-msgstr ""
-
-msgid "Clipboard history is empty"
-msgstr ""
-
-msgid "Select an item to view details"
-msgstr ""
-
-msgid "Details"
-msgstr ""
-
-msgid "Source"
-msgstr ""
-
-msgid "Unknown source"
-msgstr ""
-
-msgid "Type"
-msgstr ""
-
-msgid "Text"
-msgstr ""
-
-msgid "Size"
-msgstr ""
-
+#: prefs.js:20
 msgid "Launcher"
 msgstr ""
 
+#: prefs.js:21
 msgid "Use GTK accelerator syntax, such as <Super>r or <Ctrl>space."
 msgstr ""
 
+#: prefs.js:26
 msgid "Open shortcut"
 msgstr ""
 
-msgid "Text and images are stored in the current user data directory for 7 days."
+#: prefs.js:44
+msgid "Appearance"
 msgstr ""
 
+#: prefs.js:49
+msgid "Background blur"
+msgstr ""
+
+#: prefs.js:50
+msgid "Gaussian blur behind the panel. Turn off if opening feels slow."
+msgstr ""
+
+#: prefs.js:61 lib/launcherDialog.js:193
+msgid "Clipboard"
+msgstr ""
+
+#: prefs.js:62
+msgid ""
+"Text and images are stored in the current user data directory for 7 days."
+msgstr ""
+
+#: prefs.js:67
 msgid "Record clipboard history"
 msgstr ""
 
-msgid "Turning this off stops capturing new content but keeps existing history."
+#: prefs.js:68
+msgid ""
+"Turning this off stops capturing new content but keeps existing history."
 msgstr ""
 
+#: prefs.js:79
 msgid "Record images"
 msgstr ""
 
+#: prefs.js:80
 msgid "Supports PNG, JPEG, WebP, and BMP up to 20 MB per image."
 msgstr ""
 
+#: prefs.js:97
 msgid "History size"
 msgstr ""
 
+#: prefs.js:98
 msgid "Items older than 7 days or beyond this limit are deleted automatically."
 msgstr ""
 
+#: prefs.js:113
 msgid "Privacy"
 msgstr ""
 
+#: prefs.js:117
 msgid "This version records text and images"
 msgstr ""
 
-msgid "Image storage is limited to 200 MB. Do not copy passwords, tokens, or sensitive images."
+#: prefs.js:118
+msgid ""
+"Image storage is limited to 200 MB. Do not copy passwords, tokens, or "
+"sensitive images."
+msgstr ""
+
+#: lib/launcherDialog.js:162 lib/launcherDialog.js:403
+msgid "Search applications…"
+msgstr ""
+
+#: lib/launcherDialog.js:191
+msgid "Applications"
+msgstr ""
+
+#: lib/launcherDialog.js:201
+msgid "Clear History"
+msgstr ""
+
+#: lib/launcherDialog.js:288 lib/launcherDialog.js:406
+msgid "Open"
+msgstr ""
+
+#: lib/launcherDialog.js:291
+msgid "Switch"
+msgstr ""
+
+#: lib/launcherDialog.js:292
+msgid "Select"
+msgstr ""
+
+#: lib/launcherDialog.js:293
+msgid "Close"
+msgstr ""
+
+#: lib/launcherDialog.js:404
+msgid "Search clipboard history…"
+msgstr ""
+
+#: lib/launcherDialog.js:407
+msgid "Paste"
+msgstr ""
+
+#: lib/launcherDialog.js:474
+msgid "No applications found"
+msgstr ""
+
+#: lib/launcherDialog.js:475
+msgid "Clipboard history is empty"
+msgstr ""
+
+#: lib/launcherDialog.js:496
+msgid "Application"
+msgstr ""
+
+#: lib/launcherDialog.js:508 lib/launcherDialog.js:561
+msgid "Image"
+msgstr ""
+
+#: lib/launcherDialog.js:595
+msgid "Earlier"
+msgstr ""
+
+#: lib/launcherDialog.js:596
+msgid "Today"
+msgstr ""
+
+#: lib/launcherDialog.js:597
+msgid "Yesterday"
+msgstr ""
+
+#: lib/launcherDialog.js:598
+msgid "This Week"
+msgstr ""
+
+#: lib/launcherDialog.js:599
+msgid "This Month"
+msgstr ""
+
+#: lib/launcherDialog.js:647
+msgid "Select an item to view details"
+msgstr ""
+
+#: lib/launcherDialog.js:676
+msgid "Details"
+msgstr ""
+
+#: lib/launcherDialog.js:680
+msgid "Source"
+msgstr ""
+
+#: lib/launcherDialog.js:681
+msgid "Unknown source"
+msgstr ""
+
+#: lib/launcherDialog.js:684
+msgid "Type"
+msgstr ""
+
+#: lib/launcherDialog.js:687
+msgid "Text"
+msgstr ""
+
+#: lib/launcherDialog.js:690
+msgid "Size"
 msgstr ""
