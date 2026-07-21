@@ -2,7 +2,7 @@
   "uuid": "quick-command@xinming.dev",
   "name": "Quick Command",
   "description": "A focused GNOME command palette for launching applications and previewing text and image clipboard history.",
-  "version": 2,
+  "version": 3,
   "shell-version": ["45", "46", "47", "48"],
   "gettext-domain": "quick-command",
   "settings-schema": "org.gnome.shell.extensions.quick-command"

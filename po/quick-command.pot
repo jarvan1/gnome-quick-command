@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Quick Command\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-21 17:53+0800\n"
+"POT-Creation-Date: 2026-07-21 18:02+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,7 +89,7 @@ msgid ""
 "sensitive images."
 msgstr ""
 
-#: lib/launcherDialog.js:162 lib/launcherDialog.js:403
+#: lib/launcherDialog.js:162 lib/launcherDialog.js:407
 msgid "Search applications…"
 msgstr ""
 
@@ -101,90 +101,94 @@ msgstr ""
 msgid "Clear History"
 msgstr ""
 
-#: lib/launcherDialog.js:288 lib/launcherDialog.js:406
+#: lib/launcherDialog.js:288 lib/launcherDialog.js:410
 msgid "Open"
 msgstr ""
 
-#: lib/launcherDialog.js:291
+#: lib/launcherDialog.js:292
+msgid "Delete"
+msgstr ""
+
+#: lib/launcherDialog.js:294
 msgid "Switch"
 msgstr ""
 
-#: lib/launcherDialog.js:292
+#: lib/launcherDialog.js:295
 msgid "Select"
 msgstr ""
 
-#: lib/launcherDialog.js:293
+#: lib/launcherDialog.js:296
 msgid "Close"
 msgstr ""
 
-#: lib/launcherDialog.js:404
+#: lib/launcherDialog.js:408
 msgid "Search clipboard history…"
 msgstr ""
 
-#: lib/launcherDialog.js:407
+#: lib/launcherDialog.js:411
 msgid "Paste"
 msgstr ""
 
-#: lib/launcherDialog.js:474
+#: lib/launcherDialog.js:478
 msgid "No applications found"
 msgstr ""
 
-#: lib/launcherDialog.js:475
+#: lib/launcherDialog.js:479
 msgid "Clipboard history is empty"
 msgstr ""
 
-#: lib/launcherDialog.js:496
+#: lib/launcherDialog.js:500
 msgid "Application"
 msgstr ""
 
-#: lib/launcherDialog.js:508 lib/launcherDialog.js:561
+#: lib/launcherDialog.js:512 lib/launcherDialog.js:565
 msgid "Image"
 msgstr ""
 
-#: lib/launcherDialog.js:595
+#: lib/launcherDialog.js:599
 msgid "Earlier"
 msgstr ""
 
-#: lib/launcherDialog.js:596
+#: lib/launcherDialog.js:600
 msgid "Today"
 msgstr ""
 
-#: lib/launcherDialog.js:597
+#: lib/launcherDialog.js:601
 msgid "Yesterday"
 msgstr ""
 
-#: lib/launcherDialog.js:598
+#: lib/launcherDialog.js:602
 msgid "This Week"
 msgstr ""
 
-#: lib/launcherDialog.js:599
+#: lib/launcherDialog.js:603
 msgid "This Month"
 msgstr ""
 
-#: lib/launcherDialog.js:647
+#: lib/launcherDialog.js:651
 msgid "Select an item to view details"
 msgstr ""
 
-#: lib/launcherDialog.js:676
+#: lib/launcherDialog.js:680
 msgid "Details"
 msgstr ""
 
-#: lib/launcherDialog.js:680
+#: lib/launcherDialog.js:684
 msgid "Source"
 msgstr ""
 
-#: lib/launcherDialog.js:681
+#: lib/launcherDialog.js:685
 msgid "Unknown source"
 msgstr ""
 
-#: lib/launcherDialog.js:684
+#: lib/launcherDialog.js:688
 msgid "Type"
 msgstr ""
 
-#: lib/launcherDialog.js:687
+#: lib/launcherDialog.js:691
 msgid "Text"
 msgstr ""
 
-#: lib/launcherDialog.js:690
+#: lib/launcherDialog.js:694
 msgid "Size"
 msgstr ""
