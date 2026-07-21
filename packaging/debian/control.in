@@ -1,0 +1,12 @@
+Package: gnome-shell-extension-quick-command
+Version: @VERSION@
+Section: gnome
+Priority: optional
+Architecture: all
+Depends: gnome-shell (>= 45)
+Installed-Size: @INSTALLED_SIZE@
+Maintainer: jarvan1 <jarvan1@users.noreply.github.com>
+Homepage: https://github.com/jarvan1/gnome-quick-command
+Description: Quick Command launcher for GNOME Shell
+ Quick Command provides application discovery and launch, pinyin search,
+ configurable keyboard activation, and searchable clipboard history.

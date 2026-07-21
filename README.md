@@ -40,6 +40,19 @@ gnome-extensions prefs quick-command@xinming.local
 The shortcut field uses GTK accelerator syntax, such as `<Super>r` or
 `<Ctrl>space`.
 
+## Debian package
+
+Build an architecture-independent package for both AMD64 and ARM64:
+
+```bash
+make deb
+sudo apt install ./dist/gnome-shell-extension-quick-command_1_all.deb
+```
+
+The GitHub Actions workflow can be started manually from the Actions page. A
+tag such as `v1.0.0` also builds the package and attaches it to the matching
+GitHub Release automatically.
+
 ## Clipboard storage and privacy
 
 Clipboard text is saved to:

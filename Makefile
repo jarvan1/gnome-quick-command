@@ -3,7 +3,7 @@ BUILD_DIR := build/$(UUID)
 INSTALL_DIR := $(HOME)/.local/share/gnome-shell/extensions/$(UUID)
 SOURCES := metadata.json extension.js prefs.js stylesheet.css lib schemas
 
-.PHONY: build install uninstall clean pack test
+.PHONY: build install uninstall clean pack deb test
 
 build: clean
 	mkdir -p $(BUILD_DIR)
@@ -21,6 +21,9 @@ uninstall:
 pack:
 	mkdir -p dist
 	gnome-extensions pack --force --out-dir=dist --extra-source=lib .
+
+deb:
+	./packaging/build-deb.sh
 
 test:
 	node --experimental-default-type=module tests/pinyin.test.mjs
