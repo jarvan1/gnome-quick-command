@@ -5,7 +5,7 @@ focuses on three jobs:
 
 - open a centered launcher with a configurable global shortcut;
 - discover, search, and launch installed desktop applications;
-- capture, search, and directly paste plain-text clipboard history.
+- capture, search, preview, and directly paste text and image clipboard history.
 
 The extension targets GNOME Shell 45 and newer. It is developed against GNOME
 Shell 46 on Ubuntu 24.04.
@@ -55,17 +55,18 @@ GitHub Release automatically.
 
 ## Clipboard storage and privacy
 
-Clipboard text is saved to:
+Clipboard metadata is saved to:
 
 ```text
 ~/.local/share/quick-command/clipboard-history.json
 ```
 
-The directory and file are created with user-only permissions. The current
-version records all non-empty text up to 200,000 characters, so disable
-clipboard history before copying passwords, access tokens, or other sensitive
-content. Image clipboard support is intentionally deferred to a native helper
-instead of being mixed into the Shell UI process.
+Images are stored under `~/.local/share/quick-command/images/`. These paths use
+user-only permissions. The extension records non-empty text up to 200,000
+characters and PNG, JPEG, WebP, or BMP images up to 20 MiB each. Retained image
+data is capped at 200 MiB, and entries older than seven days are deleted.
+Disable clipboard history before copying passwords, access tokens, sensitive
+screenshots, or other private content.
 
 The bundled pinyin table is generated from the standard Rime single-character
 table; the installed extension does not require Rime or an input method to be

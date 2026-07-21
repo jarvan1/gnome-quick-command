@@ -41,12 +41,12 @@ export default class QuickCommandPreferences extends ExtensionPreferences {
 
         const clipboardGroup = new Adw.PreferencesGroup({
             title: '剪贴板',
-            description: '历史记录以纯文本保存在当前用户的数据目录中。',
+            description: '文本与图片保存在当前用户的数据目录中，并保留 7 天。',
         });
         page.add(clipboardGroup);
 
         const clipboardSwitch = new Adw.SwitchRow({
-            title: '记录文本剪贴板',
+            title: '记录剪贴板历史',
             subtitle: '关闭后停止捕获新内容，已有记录会保留',
         });
         settings.bind(
@@ -57,9 +57,27 @@ export default class QuickCommandPreferences extends ExtensionPreferences {
         );
         clipboardGroup.add(clipboardSwitch);
 
+        const clipboardImagesSwitch = new Adw.SwitchRow({
+            title: '记录图片',
+            subtitle: '支持 PNG、JPEG、WebP 和 BMP，单张最大 20 MB',
+        });
+        settings.bind(
+            'clipboard-images-enabled',
+            clipboardImagesSwitch,
+            'active',
+            Gio.SettingsBindFlags.DEFAULT
+        );
+        settings.bind(
+            'clipboard-enabled',
+            clipboardImagesSwitch,
+            'sensitive',
+            Gio.SettingsBindFlags.GET
+        );
+        clipboardGroup.add(clipboardImagesSwitch);
+
         const historySize = new Adw.SpinRow({
             title: '历史记录数量',
-            subtitle: '超出限制的旧记录会自动删除',
+            subtitle: '超过 7 天或超出数量限制的旧记录会自动删除',
             adjustment: new Gtk.Adjustment({
                 lower: 10,
                 upper: 500,
@@ -76,8 +94,8 @@ export default class QuickCommandPreferences extends ExtensionPreferences {
         const privacyGroup = new Adw.PreferencesGroup({title: '隐私说明'});
         page.add(privacyGroup);
         privacyGroup.add(new Adw.ActionRow({
-            title: '当前版本记录所有纯文本',
-            subtitle: '请勿在启用历史记录时复制密码、令牌或其他敏感信息。',
+            title: '当前版本记录文本与图片',
+            subtitle: '图片总存储上限为 200 MB；请勿复制密码、令牌或敏感图片。',
             icon_name: 'channel-secure-symbolic',
         }));
     }

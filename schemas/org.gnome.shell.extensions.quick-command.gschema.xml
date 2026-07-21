@@ -9,13 +9,18 @@
     <key name="clipboard-enabled" type="b">
       <default>true</default>
       <summary>Enable clipboard history</summary>
-      <description>Capture text copied to the regular clipboard.</description>
+      <description>Capture content copied to the regular clipboard.</description>
+    </key>
+    <key name="clipboard-images-enabled" type="b">
+      <default>true</default>
+      <summary>Enable image clipboard history</summary>
+      <description>Capture supported image formats in clipboard history.</description>
     </key>
     <key name="clipboard-history-size" type="i">
       <range min="10" max="500"/>
       <default>100</default>
       <summary>Clipboard history size</summary>
-      <description>Maximum number of text entries retained in clipboard history.</description>
+      <description>Maximum number of clipboard entries retained for up to seven days.</description>
     </key>
   </schema>
 </schemalist>
